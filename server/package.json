@@ -1,0 +1,11 @@
+{
+  "name": "srv-google-shop",
+  "version": "1.0.0",
+  "description": "server for google shop app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wet.cinnamon",
+  "license": "ISC"
+}
