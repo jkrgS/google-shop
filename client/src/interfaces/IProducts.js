@@ -1,5 +1,5 @@
-const IProduct = {
-  id: '',
+export const _product = {
+  key: '',
   title: '',
   description: '',
   link: '',
@@ -18,6 +18,4 @@ const IProduct = {
   color: '',
 };
 
-const IProducts = [IProduct];
-
-module.exports = { IProduct, IProducts };
+export const _products = [_product];
