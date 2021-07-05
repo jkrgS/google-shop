@@ -20,7 +20,7 @@ const ProductsSchema = new mongoose.Schema({
   color: { type: String },
 });
 
-ProductsSchema.index({ obo_id: 1, key: 1, label: 1 }, { unique: true });
+ProductsSchema.index({ key: 1, title: 1 });
 
 const model = mongoose.model('Products', ProductsSchema);
 
