@@ -13,7 +13,6 @@ const productsDataSuccess = (state, action) => {
       products: action.productsData,
       total_elements: action.total_elements,
       loading: false,
-      columns: action.columns,
     }
   );
 };
