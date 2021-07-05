@@ -9,7 +9,9 @@
   },
   "author": "wet.cinnamon",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "mongoose": "^5.13.2"
+  },
   "devDependencies": {
     "dotenv": "^10.0.0",
     "nodemon": "^2.0.9"

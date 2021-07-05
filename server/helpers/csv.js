@@ -15,7 +15,8 @@ const prepareCSV = async (data) => {
   const googleProducts = [];
   const googleProduct = {};
 
-  for (let index = 0; index < data.length; index++) {
+  // skip first empty rows
+  for (let index = 1; index < data.length; index++) {
     const product = data[index];
     for (let i = 0; i < product.length; i++) {
       const element = product[i];
