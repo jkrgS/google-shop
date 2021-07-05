@@ -1,1 +1,5 @@
-export { productsDataSuccess, productsDataFail } from './products';
+export {
+  productsDataSuccess,
+  productsDataFail,
+  getProductsData,
+} from './products';
