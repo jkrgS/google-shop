@@ -7,7 +7,7 @@ Monorepo architecture for storing shopping data to database and expose them to t
 ### Features implemented
 
 - Server side that provides router for serving the proper data from database.
-- Paginated table of provided csv file {page size selection included} / \*\*\* due to wrong .csv file format there was a challenging implementation.
+- Paginated table of provided csv file {page size selection included} / \*\*\* due to wrong .csv file format there was a challenging implementation & and you might see wrong data.(no time to improve the reading of csv)
 
 \*\* the csv file's records decreased to 3k, for performance purposes and saved for use at /server/assets
 
@@ -26,6 +26,7 @@ Monorepo architecture for storing shopping data to database and expose them to t
 - GraphQL
 - Jest unit tests
 - Cypress e2e tests
+- Microservice for reading/writing .csv files regarding .csv patterns
 
 ### Missed features
 
