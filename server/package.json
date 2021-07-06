@@ -1,5 +1,5 @@
 {
-  "name": "srv-google-shop",
+  "name": "server",
   "version": "1.0.0",
   "description": "server for google shop app",
   "main": "app.js",

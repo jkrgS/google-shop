@@ -4,7 +4,6 @@ const { countProducts, insertProducts } = require('./db/actions/products'),
   express = require('express'),
   cors = require('cors'),
   routes = require('./routes'),
-  { route } = require('./routes'),
   app = express();
 
 // allow body parsing
