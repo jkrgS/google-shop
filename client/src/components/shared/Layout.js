@@ -9,6 +9,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
+import Divider from '@material-ui/core/Divider';
 import { useLocation } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
@@ -94,6 +95,7 @@ const LayoutNav = ({ children }) => {
           {location}
         </Typography>
       </Breadcrumbs>
+      <Divider style={styles.divider} />
       <div className="siteLayoutContent">{children}</div>
     </div>
   );
@@ -102,7 +104,10 @@ const LayoutNav = ({ children }) => {
 // local styling
 const styles = {
   breadcrumb: {
-    margin: '15px',
+    margin: '1rem',
+  },
+  divider: {
+    marginBottom: '5rem',
   },
 };
 
