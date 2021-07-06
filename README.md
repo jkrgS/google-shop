@@ -21,19 +21,19 @@ Monorepo architecture for storing products data to database and expose them to t
 - Redux thunk for async functionalities
 - React router for navigation / lazy loaded(there is 1 route but is settled lazy for future purposes)
 
-### Potential improvements
-
-- GraphQL
-- Jest unit tests
-- Cypress e2e tests
-- Microservice for reading/writing .csv files regarding .csv patterns
-
 ### Missed features
 
 \*\* due to the strict time schedule i had, there was a lack of time to complete all suggested(as required) features
 
 - Filtering
 - Details product page
+
+### Potential improvements
+
+- GraphQL
+- Jest unit tests
+- Cypress e2e tests
+- Microservice for reading/writing .csv files regarding .csv patterns
 
 ## Instructions
 
