@@ -1,6 +1,6 @@
 # google-shop
 
-Monorepo architecture for storing shopping data to database and expose them to the user.
+Monorepo architecture for storing products data to database and expose them to the user.
 
 ![](server/assets/dmb.gif)
 
