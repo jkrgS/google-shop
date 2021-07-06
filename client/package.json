@@ -1,5 +1,5 @@
 {
-  "name": "client-google-shop",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,10 +21,13 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "install-deps": "yarn install",
     "start": "PORT=3100 react-scripts -r dotenv/config start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier:format": "prettier --check ./src",
+    "prettier:fix": "prettier --write ./src"
   },
   "eslintConfig": {
     "extends": [

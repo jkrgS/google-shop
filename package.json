@@ -1,0 +1,37 @@
+{
+  "name": "google-shop",
+  "version": "1.0.0",
+  "description": "Project that represents a shopping platform",
+  "repository": "git@github.com:jkrgS/google-shop.git",
+  "author": "jkrgS <siskogeorge@gmail.com>",
+  "license": "MIT",
+  "private": "true",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "client-start": "yarn workspace client start",
+    "client-prettier-fix": "yarn workspace client prettier:fix",
+    "client-prettier-format": "yarn workspace client prettier:format",
+    "server-start": "yarn workspace server start_dev"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-plugin-react": "^7.23.2",
+    "husky": "^4.3.5",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1"
+  },
+  "lint-staged": {
+    "**/*.+(js|jsx|css|md)": [
+      "eslint . --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

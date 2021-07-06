@@ -17,22 +17,22 @@ const useStyles = makeStyles((theme) => ({
 const PaginationActions = (props) => {
   const classes = useStyles();
   const theme = useTheme();
-  const { count, page, rowsPerPage, onChangePage } = props;
+  const { count, page, rowsPerPage, onPageChange } = props;
 
   const handleFirstPageButtonClick = (event) => {
-    onChangePage(event, 1);
+    onPageChange(event, 1);
   };
 
   const handleBackButtonClick = (event) => {
-    onChangePage(event, page - 1);
+    onPageChange(event, page - 1);
   };
 
   const handleNextButtonClick = (event) => {
-    onChangePage(event, page + 1);
+    onPageChange(event, page + 1);
   };
 
   const handleLastPageButtonClick = (event) => {
-    onChangePage(event, Math.max(1, Math.ceil(count / rowsPerPage) - 1));
+    onPageChange(event, Math.max(1, Math.ceil(count / rowsPerPage) - 1));
   };
 
   return (
@@ -79,7 +79,7 @@ const PaginationActions = (props) => {
 
 PaginationActions.propTypes = {
   count: PropTypes.number.isRequired,
-  onChangePage: PropTypes.func.isRequired,
+  onPageChange: PropTypes.func.isRequired,
   page: PropTypes.number.isRequired,
   rowsPerPage: PropTypes.number.isRequired,
 };
